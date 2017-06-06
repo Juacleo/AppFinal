@@ -1,0 +1,527 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicación Final</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--grupo CSS-->
+    <link rel="stylesheet" href="css/tema-app10.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+    <!--grupo JavaScript-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/acciones.js"></script>
+    <script src="phonegap.js"></script>
+    <script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+    <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/libro2b.jpg','imagenes/libro3b.jpg','imagenes/libro4b.jpg','imagenes/libro5b.jpg','imagenes/pelicula.jpg','imagenes/mecatronica3.jpg','imagenes/administracion 1.jpg','imagenes/mecatronica5.jpg','imagenes/AmB6.jpg','imagenes/AmB5.jpg')">
+
+   <div data-role="page" id="principal" data-theme="a">
+  	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="a">
+    	<h1> Carreras Universitarias </h1>
+   	</div>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+    <li><img src="data1/images/administracion_3.jpg" alt="Aministracion de empresas" title="Aministracion de empresas" id="wows1_0"/></li>
+    <li><img src="data1/images/administracion_4.jpg" alt="Administradores" title="Administradores" id="wows1_1"/></li>
+    <li><img src="data1/images/administracion5.jpg" alt="Administrador" title="Administrador" id="wows1_2"/></li>
+    <li><img src="data1/images/amb1.jpg" alt="Administrador de Base de Datos" title="Administrador de Base de Datos" id="wows1_3"/></li>
+    <li><img src="data1/images/amb2.jpg" alt="Administrador de BD" title="Administrador de BD" id="wows1_4"/></li>
+    <li><img src="data1/images/amb3.jpg" alt="Administrador de BD" title="Administrador de BD" id="wows1_5"/></li>
+    <li><a href="http://wowslider.com"><img src="data1/images/mecatronica5.jpg" alt="bootstrap slider" title="Mecatronica" id="wows1_6"/></a></li>
+    <li><img src="data1/images/mecatronica6.jpg" alt="Ingenieria Mecatronica" title="Ingenieria Mecatronica" id="wows1_7"/></li>
+  </ul></div>
+  <div class="ws_bullets"><div>
+    <a href="#" title="Aministracion de empresas"><span><img src="data1/tooltips/administracion_3.jpg" alt="Aministracion de empresas"/>1</span></a>
+    <a href="#" title="Administradores"><span><img src="data1/tooltips/administracion_4.jpg" alt="Administradores"/>2</span></a>
+    <a href="#" title="Administrador"><span><img src="data1/tooltips/administracion5.jpg" alt="Administrador"/>3</span></a>
+    <a href="#" title="Administrador de Base de Datos"><span><img src="data1/tooltips/amb1.jpg" alt="Administrador de Base de Datos"/>4</span></a>
+    <a href="#" title="Administrador de BD"><span><img src="data1/tooltips/amb2.jpg" alt="Administrador de BD"/>5</span></a>
+    <a href="#" title="Administrador de BD"><span><img src="data1/tooltips/amb3.jpg" alt="Administrador de BD"/>6</span></a>
+    <a href="#" title="Mecatronica"><span><img src="data1/tooltips/mecatronica5.jpg" alt="Mecatronica"/>7</span></a>
+    <a href="#" title="Ingenieria Mecatronica"><span><img src="data1/tooltips/mecatronica6.jpg" alt="Ingenieria Mecatronica"/>8</span></a>
+  </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>  
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    
+    
+   <div>
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+      <li class="ui-first-child ui-last-child">
+          <a href="#pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2> Ingeniería en Mecatrónica  </h2> 
+             <p>  </p>
+          </a>
+        </li>     
+       <li class="ui-first-child ui-last-child">
+          <a href="#pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2> Licenciatura en Administración </h2>  
+               <h2>de Empresas</h2>
+          </a>
+       </li> 
+      <li class="ui-first-child ui-last-child">
+          <a href="#pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2> Administrador de Base de Datos  </h2>  
+               <p>  </p>
+          </a>
+       </li>
+      <li class="ui-first-child ui-last-child">
+          <a href="#pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2> Datos de Desarrollador  </h2>  
+               <p>  </p>
+          </a>
+       </li> 
+      </ul>
+   </div>
+    <!-- Start WOWSlider.com BODY section -->
+			<div id="wowslider-container2">
+			<div class="ws_images"><ul>
+    		<li><img src="data2/images/administracion_1.jpg" alt="Administrador" title="Administrador" id="wows2_0"/></li>
+    		<li><img src="data2/images/administracion7.jpg" alt="Administrador de Empresas" title="Administrador de Empresas" id="wows2_1"/></li>
+    		<li><img src="data2/images/amb5.jpg" alt="Administrador de Base de Datos" title="Administrador de Base de Datos" id="wows2_2"/></li>
+    		<li><img src="data2/images/amb7.jpg" alt="Base de Datos" title="Base de Datos" id="wows2_3"/></li>
+    		<li><img src="data2/images/cuva.jpg" alt="CUVA" title="CUVA" id="wows2_4"/></li>
+    		<li><img src="data2/images/itsa.jpg" alt="ITSA" title="ITSA" id="wows2_5"/></li>
+    		<li><a href="http://wowslider.com"><img src="data2/images/ueep.png" alt="jquery slider" title="UEEP" id="wows2_6"/></a></li>
+    		<li><img src="data2/images/unid.jpg" alt="UNID" title="UNID" id="wows2_7"/></li>
+  			</ul></div>
+  		<div class="ws_bullets"><div>
+    		<a href="#" title="Administrador"><span><img src="data2/tooltips/administracion_1.jpg" alt="Administrador"/>1</span></a>
+    		<a href="#" title="Administrador de Empresas"><span><img src="data2/tooltips/administracion7.jpg" alt="Administrador de Empresas"/>2</span></a>
+    		<a href="#" title="Administrador de Base de Datos"><span><img src="data2/tooltips/amb5.jpg" alt="Administrador de Base de Datos"/>3</span></a>
+    		<a href="#" title="Base de Datos"><span><img src="data2/tooltips/amb7.jpg" alt="Base de Datos"/>4</span></a>
+    		<a href="#" title="CUVA"><span><img src="data2/tooltips/cuva.jpg" alt="CUVA"/>5</span></a>
+    		<a href="#" title="ITSA"><span><img src="data2/tooltips/itsa.jpg" alt="ITSA"/>6</span></a>
+    		<a href="#" title="UEEP"><span><img src="data2/tooltips/ueep.png" alt="UEEP"/>7</span></a>
+    		<a href="#" title="UNID"><span><img src="data2/tooltips/unid.jpg" alt="UNID"/>8</span></a>
+  			</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">css slider</a> by WOWSlider.com v8.7</div>
+			<div class="ws_shadow"></div>
+			</div>  
+			<script type="text/javascript" src="engine2/wowslider.js"></script>
+			<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<div>
+<div data-role="collapsible" data-content-theme="false">
+     <h1> Universidades </h1>
+  <div data-role="main" class="ui-content" align="center">
+        <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+     <li class="ui-first-child ui-last-child">
+      <a href="http://www.universia.net.mx/universidades/instituto-tecnologico-superior-atlixco/in/29928" data-role="button">
+       <h5>ITSA</h5>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="http://www.angelopoliscuva.com/" data-role="button">
+       <h5>CUVA</h5>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="http://www.ueep.edu.mx/" data-role="button">
+       <h5>UEEP</h5>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="http://www.unid.edu.mx/atlixco.html" data-role="button">
+       <h5>UNID</h5>
+      </a>
+     </li>
+    </ul>
+   </div> 
+   </div>
+   </div>
+</div>
+     <div  data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+         <img src="res/android/mdpi.png" width="46" height="46"><br>
+         <h4> Carreras Universitarias<br>Joaquin Villa Amelco  </h4>
+      </div>
+     </div> 
+     </div>
+     
+<div data-role="page" id="pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Ingeniería Mecatrónica </h1>
+  </div>
+  <div>
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+      <li class="ui-first-child ui-last-child">
+          <a href="#pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2> ¿Qué es ?  </h2> 
+             <p>  </p>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+          <a href="#pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2> Capacitaciones  </h2> 
+             <p>  </p>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+          <a href="#pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2> ¿Dónde se utiliza?  </h2> 
+             <p>  </p>
+          </a>
+        </li>
+   </ul>
+   </div>
+</div>
+<div data-role="page" id="pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Ingeniería Mecatrónica </h1>
+  </div>     
+      <div data-role="content" align="center">
+      <img src="imagenes/mecatronica1.jpg" width="320" height="245"> 
+      </div>
+    <div>
+    <h4><p>Un consenso común es describir a la mecatrónica como una disciplina integradora de las áreas de mecánica, electrónica e informática cuyo objetivo es proporcionar mejores productos, 						procesos y sistemas industriales.<br>
+    se puede hacer referencia a la definición propuesta por J. A. Rietdijk: "Mecatrónica es la combinación sinérgica de la ingeniería mecánica de precisión, de la electrónica, del control automático y de los sistemas para el diseño de productos y procesos", la cual busca crear maquinaria más compleja para facilitar las actividades del ser humano a través de procesos electrónicos en la industria mecánica principalmente. </p></h4>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/mecatronica3.jpg',1)"><img src="imagenes/mecatronica2.jpg" width="395" height="260" id="Image5"></a>
+      </div>
+      <div data-role="collapsible" data-content-theme="false">
+     <h1> Enlaces </h1>
+      <div data-role="main" class="ui-content" align="center">
+        <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+     <li class="ui-first-child ui-last-child">
+      <a href="https://es.wikipedia.org/wiki/Ingenier%C3%ADa_mecatr%C3%B3nica" data-role="button">
+       <h5>Más<br>Información</h5>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="http://www.universia.net.mx/estudios/itsatlixco/ingenieria-mecatronica/st/141877" data-role="button" >
+       <h5>Donde <br>estudiarla</h5>
+      </a>
+     </li>
+    </ul>
+   </div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+    <h4> Proyecto Final, JVA </h4>
+  </div>
+</div>
+<div data-role="page" id="pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Capacitaciones </h1>
+  </div>
+  <div>
+    <ul>
+        <li> Diseñar, construir e implementar productos y sistemas mecatrónicos para satisfacer necesidades emergentes, bajo el compromiso ético de su impacto económico, social, ambiental y político.</li>
+        <li> Generar soluciones basadas en la creatividad, innovación y mejora continua de sistemas de control y automatización de procesos industriales.</li>
+        <li> Apoyar a la competitividad de las empresas a través de la automatización de procesos.</li>
+        <li> Evaluar, seleccionar e integrar dispositivos y máquinas mecatrónicas, tales como robots, tornos de control numérico, controladores lógicos programables, computadoras industriales, entre otros, para el mejoramiento de procesos industriales de manufactura.</li>
+        <li> Dirigir equipos de trabajo multidisciplinario.</li>
+    </ul>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image42','','imagenes/mecatronica6.jpg',0)"><img src="imagenes/mecatronica7.png" width="380" height="209" id="Image42"></a> 
+    </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4> Proyecto Final, JVA </h4>
+	  </div>
+</div>
+ 
+<div data-role="page" id="pagina7" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Utilización </h1>
+        </div>
+    <div>
+      <ul>
+          <li>Empresas de la Industria de la Automatización: empresas que utilizan sistemas o elementos computarizados y electromecánicos para controlar maquinarias y/o procesos industriales.</li>
+          <li>Empresas de la Industria de Manufactura Flexible: aquellas que se dedican a fabricar sistemas o componentes eléctricos o electrónicos de forma automática.</li>
+      </ul>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image41','','imagenes/mecatronica5.jpg',1)"><img src="imagenes/mecatronica4.jpg" width="584" height="429" id="Image41"></a> 
+      </div>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+    <h4> Proyecto Final, JVA </h4>
+	  </div>
+    </div>
+             
+<div data-role="page" id="pagina2" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Licenciatura Administración de Empresas </h1>
+      </div>
+      <div>
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+      <li class="ui-first-child ui-last-child">
+          <a href="#pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2> ¿Qué es ?  </h2> 
+             <p>  </p>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+          <a href="#pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2> ¿Qué hace un administrador?  </h2> 
+             <p>  </p>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+          <a href="#pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2> ¿Dónde puede trabajar?  </h2> 
+             <p>  </p>
+          </a>
+        </li>
+   </ul>
+   </div>
+   </div>
+   
+<div data-role="page" id="pagina8" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Licenciatura Administración de Empresas </h1>
+      </div>
+      <div data-role="content" align="center">
+      <img src="imagenes/Empresa.jpg" width="297" height="215">
+<h4>El Licenciado en Ciencias Empresariales es un profesional capaz de generar una visión estratégica de su organización, conformando equipos directivos y logrando la adecuada integración de las distintas áreas funcionales con personas de entornos culturales diversos, manifestando idealmente una constante actitud emprendedora.</h4>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+     <h1> Enlace </h1>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+     <li class="ui-first-child ui-last-child">
+      <a href="http://unid.edu.mx/licenciatura/lae.html" data-role="button">
+       <h5>Dónde<br>Estudiarlo</h5>
+      </a>
+     </li>
+    </ul>
+   </div> 
+   </div>
+   </div>
+   <div data-role="footer" data-theme="a" data-position="fixed">
+           <h4> Proyecto Final, JVA </h4>
+        </div>
+  </div>
+   
+<div data-role="page" id="pagina9" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Administrador </h1>
+      </div>
+  
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image40','','imagenes/administracion 1.jpg',1)"><img src="imagenes/administracion 2.jpg" width="579" height="440" id="Image40"></a>
+     <h4><p>Evalúa  lo que ocurre dentro y fuera de la empresa.
+-Proyecta  el devenir de la empresa y su vinculación con el medio.<br>
+-Diseña la estrategia de la organización de manera de adaptar la empresa a los cambios del medio.<br>
+-Genera proyectos viables. Formula y administra proyectos de inversión, desde la concepción inicial del proyecto, su diseño y construcción hasta la gestión de su operación real.<br>
+-Planifica la gestión, estrategias y políticas al interior de las empresas.<br>
+-Lidera, motiva, persuade, negocia, conduce y trabaja en equipo para el logro de los objetivos de la empresa.<br> Debe conocer a las personas que tiene bajo su mando obteniendo lo mejor de ellas y ser capaz de conducirlas a dichos objetivos.<br>
+-Interpreta los resultados económicos y administrativos de la empresa y los cuestiona.<br>
+-Toma  iniciativas y riesgos empresariales con conocimientos de los instrumentos propios de la actividad.<br>
+-Estudia la  estructura organizacional de la empresa y sus procesos de decisión, planificación, información y control.<br>
+-Hace uso de métodos e instrumentos científicos y tecnológicos para optimizar el potencial humano, los recursos materiales, tecnológicos, económicos y financieros de las organizaciones.<br>
+-Incorpora mayor tecnología para incrementar la eficiencia y productividad.<br>
+-Conoce bien el tipo de producto que ofrece, mercado al que va dirigido, nivel de ventas y sus posibilidades reales de abastecer a sus clientes potenciales; al tiempo que tiene controladas las áreas de producción, administración, y financiación.</p></h4>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+     <h1> Enlace </h1>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+     <li class="ui-first-child ui-last-child">
+      <a href="http://www.austral.edu.ar/ingresantes/orientaciones-administracion-de-empresas/" data-role="button">
+       <h5>Más<br>Información</h5>
+      </a>
+     </li>
+    </ul>
+   </div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+           <h4> Proyecto Final, JVA </h4>
+        </div>
+</div>
+<div data-role="page" id="pagina10" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Trabajos </h1>
+      </div>
+      <img src="imagenes/administracion 6.jpg" width="470" height="252">
+      <div>
+<h4><p>Empresas públicas<br>
+Empresas privadas<br>
+Investigador, ejecutivo o asesor de todo tipo de empresas u organizaciones que se vinculen con fenómenos de orden económico.<br>
+Investigación y docencia en Instituciones de educación superior, como Universidades, Institutos, etc.<br>
+Emprender su propio negocio</p></h4>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+     <h1> Enlace </h1>
+  <div data-role="main" class="ui-content" align="center">
+        <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+     <li class="ui-first-child ui-last-child">
+      <a href="https://www.indeed.com.mx/trabajo?q=Administrador+empresas&l=Puebla%2C+Pue." data-role="button">
+       <h5>Ofertas<br>de<br>Trabajo</h5>
+      </a>
+     </li>
+    </ul>
+   </div> 
+   </div>
+   </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+           <h4> Proyecto Final, JVA </h4>
+        </div>
+</div>
+
+<div data-role="page" id="pagina3" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Administrador de Base de Datos </h1>
+      </div>
+      <div>
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+      <li class="ui-first-child ui-last-child">
+          <a href="#pagina11" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2> ¿Qué hace ?  </h2> 
+             <p>  </p>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+          <a href="#pagina12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2> ¿Cualidades de un Administrador?  </h2> 
+             <p>  </p>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+          <a href="#pagina13" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2> ¿Oprtunidades de Empleo?  </h2> 
+             <p>  </p>
+          </a>
+        </li>
+   </ul>
+   </div>
+   </div>
+   <div data-role="page" id="pagina11" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Administrador de Base de Datos </h1>
+      </div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image43','','imagenes/AmB6.jpg',1)"><img src="imagenes/AmB4.jpg" width="388" height="227" id="Image43"></a>
+<div>
+    <h4>Un administrador de base de datos (DBA) dirige o lleva a cabo todas las actividades relacionadas con el mantenimiento de un entorno de base de datos exitoso. Las responsabilidades incluyen el diseño, implementación y mantenimiento del sistema de base de datos; el establecimiento de políticas y procedimientos relativos a la gestión, la seguridad, el mantenimiento y el uso del sistema de gestión de base de datos; y la capacitación de los empleados en la gestión y el uso de las bases de datos. Se espera que un DBA se mantenga al tanto de las nuevas tecnologías y los nuevos enfoques de diseño.</h4>
+  </div>
+  <div data-role="collapsible" data-content-theme="false">
+     <h1> Enlace </h1>
+  <div data-role="main" class="ui-content" align="center">
+        <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+     <li class="ui-first-child ui-last-child">
+      <a href="http://searchdatacenter.techtarget.com/es/definicion/Administrador-de-base-de-datos-DBA" data-role="button">
+       <h5>Más<br>Información</h5>
+      </a>
+     </li>
+    </ul>
+   </div> 
+   </div>
+   </div>
+   <div data-role="footer" data-theme="a" data-position="fixed">
+           <h4> Proyecto Final, JVA </h4>
+       </div>
+       </div>
+   <div data-role="page" id="pagina12" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Cualidades </h1>
+      </div>
+      <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image44','','imagenes/AmB5.jpg',1)"><img src="imagenes/AmB1.jpg" width="580" height="338" id="Image44"></a>
+<ul>
+      <li>Los ABD deben ser capaces de controlar el rendimiento de un sistema de base de datos para determinar cuándo se debe intervenir. Deben ser capaces de evaluar información compleja que proviene de fuentes diversas.</li>
+      <li>La mayoría de los administradores de bases de datos trabaja en equipos y debe ser capaz de comunicarse eficazmente con los diseñadores de software, gerentes y otros trabajadores.</li>
+      <li>Trabajar con bases de datos requiere la comprensión de sistemas complejos, en los que un pequeño error puede causar grandes complicaciones. Por ejemplo, mezclar la información sobre las tarjetas de crédito de los clientes puede llevar a que se cobre a una persona por una compra que no hizo.</li>
+      <li>Los administradores de bases de datos usan software para dar sentido la información y organizarla según patrones significativos. La información luego se almacena en las bases de datos que estos trabajadores administran, prueban y mantienen.</li>
+      <li>Cuando surgen problemas en una base de datos, los administradores deben ser capaces de diagnosticarlos y corregirlos.</li>
+      </ul>
+      </div>
+      <div data-role="collapsible" data-content-theme="false">
+     <h1> ¿Cómo es un administrador? </h1>
+  <div data-role="main" class="ui-content" align="center">
+        <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+     <li class="ui-first-child ui-last-child">
+      <a href="http://www.carrerasuniversitarias.com/carreras/ingenieria-y-tecnologia/administrador-de-bases-de-datos.html" data-role="button">
+       <h5>Averigualo<br>Aqui</h5>
+      </a>
+     </li>
+    </ul>
+   </div> 
+   </div>
+   </div>
+   <div data-role="footer" data-theme="a" data-position="fixed">
+           <h4> Proyecto Final, JVA </h4>
+       </div>
+     </div>
+   <div data-role="page" id="pagina13" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>  Emlpleo </h1>
+      </div>
+      <div>
+      <h4>Se proyecta que el empleo de los administradores de bases de datos (ABD) aumentará un 31 por ciento entre 2010 y 2020, mucho más rápido que el promedio de todas las ocupaciones. El rápido aumento de la captación de datos por parte de las empresas contribuirá al crecimiento de esta ocupación. Los administradores de bases de datos serán necesarios para organizar y presentar los datos en forma tal que facilite su comprensión para los analistas y otras partes interesadas. Además, su empleo aumentará debido a que las necesidades de protección de las bases de datos son mayores y los ABD son los encargados de implementar las medidas de seguridad necesarias.</h4>
+      </div>
+      <div data-role="collapsible" data-content-theme="false">
+     <h1> Enlace </h1>
+  <div data-role="main" class="ui-content" align="center">
+        <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+     <li class="ui-first-child ui-last-child">
+      <a href="http://www.opcionempleo.com.mx/empleo-administrador-de-base-de-datos/puebla-36836.html" data-role="button">
+       <h5>Ofertas<br>de<br>Empleo</h5>
+      </a>
+     </li>
+    </ul>
+   </div> 
+   </div>
+   </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+           <h4> Proyecto Final, JVA </h4>
+       </div>
+     </div>
+                
+<div data-role="page" id="pagina4" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Datos de Desarrollador </h1>
+      </div>
+     <div>
+     <h3><p>Alumno: Villa Amelco Joaquin</p></h3>
+     <h3><p>Grupo: "G"</p></h3>
+     <h3><p>Semestre: 4</p></h3>
+     <h3><p>Submodulo: Desarrollo de Aplicaciones Mobiles (DAM)</p></h3>
+     <h3><p>Docente: Jose Antonio Gomez Hernandez</p></h3>
+     </div>
+         <div data-role="footer" data-theme="a" data-position="fixed">
+           <h4> Proyecto Final, JVA </h4>
+           </div>
+           </div>
+             
+</body>
+</html>
